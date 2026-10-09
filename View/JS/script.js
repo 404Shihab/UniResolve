@@ -1,0 +1,166 @@
+function validate_login(){
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value.trim();
+
+    let valid = true;
+    let message = "";
+
+    if(email == ""){
+        message += "Email cannot be empty\n";
+        valid = false;
+    }
+    if(password.length < 5){
+        message += "Password should be at least 5 characters\n";
+        valid = false;
+    }
+    if(!valid){
+        alert(message);
+    }
+    return valid;
+}
+
+function collect_data(){
+    let fullname = document.getElementById("fullname").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let password = document.getElementById("password").value.trim();
+    let confirm_password = document.getElementById("confirm_password").value.trim();
+
+    let valid = true;
+    let message = "";
+
+    if(fullname.length < 5){
+        message += "Full name should be at least 5 characters\n";
+        valid = false;
+    }
+    if(email == ""){
+        message += "Email cannot be empty\n";
+        valid = false;
+    }
+    if(password.length < 5){
+        message += "Password should be at least 5 characters\n";
+        valid = false;
+    }
+    if(confirm_password == ""){
+        message += "Confirm password cannot be empty\n";
+        valid = false;
+    }
+    if(password != confirm_password){
+        message += "Password and Confirm Password do not match\n";
+        valid = false;
+    }
+    if(!valid){
+        alert(message);
+    }
+    return valid;
+}
+
+function validate_complaint(){
+    let title = document.getElementById("title").value.trim();
+    let category = document.getElementById("category").value.trim();
+    let description = document.getElementById("description").value.trim();
+
+    let valid = true;
+    let message = "";
+
+    if(title.length < 5){
+        message += "Complaint title should be at least 5 characters\n";
+        valid = false;
+    }
+    if(category.length < 3){
+        message += "Category should be at least 3 characters\n";
+        valid = false;
+    }
+    if(description.length < 10){
+        message += "Description should be at least 10 characters\n";
+        valid = false;
+    }
+    if(!valid){
+        alert(message);
+    }
+    return valid;
+}
+
+function validate_profile_update(){
+    let fullname = document.getElementById("fullname").value.trim();
+    let email = document.getElementById("email").value.trim();
+
+    let valid = true;
+    let message = "";
+
+    if(fullname.length < 5){
+        message += "Full name should be at least 5 characters\n";
+        valid = false;
+    }
+    if(email == ""){
+        message += "Email cannot be empty\n";
+        valid = false;
+    }
+    if(!valid){
+        alert(message);
+    }
+    return valid;
+}
+
+function validate_password_change(){
+    let current_password = document.getElementById("current_password").value.trim();
+    let new_password = document.getElementById("new_password").value.trim();
+    let confirm_new_password = document.getElementById("confirm_new_password").value.trim();
+
+    let valid = true;
+    let message = "";
+
+    if(current_password == ""){
+        message += "Current password cannot be empty\n";
+        valid = false;
+    }
+    if(new_password.length < 5){
+        message += "New password should be at least 5 characters\n";
+        valid = false;
+    }
+    if(new_password != confirm_new_password){
+        message += "New Password and Confirm Password do not match\n";
+        valid = false;
+    }
+    if(!valid){
+        alert(message);
+    }
+    return valid;
+}
+
+function CheckEmail()
+{
+    let email=document.getElementById("email").value;
+    let response= document.getElementById("emailresponse");
+    let xhttp=new XMLHttpRequest();
+    xhttp.onreadystatechange=function(){
+        if(this.readyState==4 && this.status==200)
+        {
+            response.innerHTML=this.responseText;
+        }
+        else{
+            document.getElementById("emailresponse").innerHTML=this.status;
+        }
+    }
+    xhttp.open("POST", "../../../Controller/CheckEmail.php", true);
+    xhttp.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+    xhttp.send("email=" + email);
+}
+
+function CheckEmailProfile()
+{
+    let email=document.getElementById("email").value;
+    let response= document.getElementById("emailresponse");
+    let xhttp=new XMLHttpRequest();
+    xhttp.onreadystatechange=function(){
+        if(this.readyState==4 && this.status==200)
+        {
+            response.innerHTML=this.responseText;
+        }
+        else{
+            document.getElementById("emailresponse").innerHTML=this.status;
+        }
+    }
+    xhttp.open("POST", "../../../Controller/CheckEmailProfile.php", true);
+    xhttp.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+    xhttp.send("email=" + email);
+}
