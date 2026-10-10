@@ -111,32 +111,32 @@ This project is developed for educational purposes.
 
 ### Home Page
 
-![Home Page](assets/screenshots/home.png)
+![Home Page](Assets/screenshots/home.png)
 
 ### Authentication
 
 | Login | Registration |
 |---|---|
-| ![Login](assets/screenshots/login.png) | ![Registration](assets/screenshots/register.png) |
+| ![Login](Assets/screenshots/login.png) | ![Registration](Assets/screenshots/register.png) |
 
 ### Student Portal
 
 | Student Dashboard | My Complaints |
 |---|---|
-| ![Student Dashboard](assets/screenshots/student-dashboard.png) | ![Submit Complaints](assets/screenshots/submit-complaints.png) |
+| ![Student Dashboard](Assets/screenshots/student-dashboard.png) | ![Submit Complaints](Assets/screenshots/submit-complaints.png) |
 
 ### Admin Portal
 
 | Admin Dashboard | Manage Users |
 |---|---|
-| ![Admin Dashboard](assets/screenshots/admin-dashboard.png) | ![Manage Complaints](assets/screenshots/manage-complaints.png) |
+| ![Admin Dashboard](Assets/screenshots/admin-dashboard.png) | ![Manage Complaints](Assets/screenshots/manage-complaints.png) |
 
 ### Staff Portal
 
 | Staff Dashboard | Assigned Complaints |
 |---|---|
-| ![Staff Dashboard](assets/screenshots/staff-dashboard.png) | ![Update Status](assets/screenshots/update-status.png) |
+| ![Staff Dashboard](Assets/screenshots/staff-dashboard.png) | ![Update Status](Assets/screenshots/update-status.png) |
 
 ### Profile
 
-![Profile](assets/screenshots/profile.png)
+![Profile](Assets/screenshots/profile.png)
