@@ -106,3 +106,37 @@ This project is developed for educational purposes.
 ---
 
 **UniResolve** – Making university complaint management simpler and more organized.
+
+## Screenshots
+
+### Home Page
+
+![Home Page](assets/screenshots/home.png)
+
+### Authentication
+
+| Login | Registration |
+|---|---|
+| ![Login](assets/screenshots/login.png) | ![Registration](assets/screenshots/register.png) |
+
+### Student Portal
+
+| Student Dashboard | My Complaints |
+|---|---|
+| ![Student Dashboard](assets/screenshots/student-dashboard.png) | ![Submit Complaints](assets/screenshots/submit-complaints.png) |
+
+### Admin Portal
+
+| Admin Dashboard | Manage Users |
+|---|---|
+| ![Admin Dashboard](assets/screenshots/admin-dashboard.png) | ![Manage Complaints](assets/screenshots/manage-complaints.png) |
+
+### Staff Portal
+
+| Staff Dashboard | Assigned Complaints |
+|---|---|
+| ![Staff Dashboard](assets/screenshots/staff-dashboard.png) | ![Update Status](assets/screenshots/update-status.png) |
+
+### Profile
+
+![Profile](assets/screenshots/profile.png)
