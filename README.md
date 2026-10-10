@@ -117,7 +117,7 @@ This project is developed for educational purposes.
 
 | Login | Registration |
 |---|---|
-| ![Login](assets/screenshots/login.png) | ![Registration](assets/screenshots/register.png) |
+| ![Login](./assets/screenshots/login.png) | ![Registration](./assets/screenshots/register.png) |
 
 ### Student Portal
 
