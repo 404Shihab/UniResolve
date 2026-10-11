@@ -72,7 +72,7 @@ The project follows the MVC (Model-View-Controller) architecture to separate app
 * `View/` – User interface and presentation files.
 * `Controller/` – Request handling and application flow.
 
-*Note: Update the folder descriptions above if your actual project structure differs.*
+
 
 ## Installation and Setup
 
